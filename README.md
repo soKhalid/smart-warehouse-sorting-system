@@ -198,7 +198,7 @@ We welcome contributions from the community! Please read our Contributing Guidel
 📞 Contact & Support
 For questions, collaboration opportunities, or technical support:
 
-📧 Project Team: [Create team email or individual contacts]
+📧 Project Team: [mr.k.sh7i@gmail.com] ( Khalid's contact )
 🎓 Institution: The British University in Dubai
 📋 Issues: Use GitHub Issues for bug reports and feature requests
 
