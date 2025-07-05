@@ -91,3 +91,122 @@ An intelligent warehouse sorting system that integrates artificial intelligence,
 - AccelStepper  
 - xArmServoController
 - Ultrasonic
+```
+Installation Steps
+
+Clone the repository
+
+bashgit clone https://github.com/yourusername/smart-warehouse-sorting-system.git
+cd smart-warehouse-sorting-system
+
+Hardware Setup
+
+Follow wiring diagram in /hardware/wiring_diagrams/
+Ensure proper 12V→5V voltage regulation
+Mount all components according to mechanical drawings
+
+
+Software Configuration
+
+cpp// Update WiFi credentials in src/main_controller/main_arduino_code.ino
+char ssid[] = "your_wifi_network";
+char pass[] = "your_wifi_password";
+
+// Update Blynk authentication token
+#define BLYNK_AUTH_TOKEN "your_blynk_token_here"
+
+Upload Code
+
+Upload src/main_controller/main_arduino_code.ino to Arduino UNO WiFi Rev2
+Upload src/arm_controller/arm_arduino_code.ino to Arduino UNO
+
+
+Configure Blynk App
+
+Create new project with provided template
+Add virtual pins: V0 (Electronics), V1 (Furniture), V2 (Makeup)
+
+
+
+📈 Results & Testing
+Classification Performance
+
+Electronics: 96% accuracy (25 test objects)
+Furniture: 94% accuracy (22 test objects)
+Makeup: 95% accuracy (20 test objects)
+
+Robotic Arm Performance
+
+Positioning Accuracy: ±2.1mm average
+Success Rate: 98.2% across all categories
+Cycle Time: 8.0 seconds average
+
+System Reliability
+
+8-Hour Continuous Test: 95.2% success rate
+200-Cycle Integration Test: 94.5% overall success
+Network Uptime: 98.2% IoT connectivity
+
+🔮 Future Development Roadmap
+Immediate Enhancements (0-6 months)
+
+ Startup signal bug fix with pull-down resistors
+ 30-40% speed optimization through parallel processing
+ Environmental robustness with adaptive lighting control
+
+Advanced Features (6-18 months)
+
+ Multi-arm coordination for increased throughput
+ Custom neural networks replacing HuskyLens
+ Quality assessment capabilities
+ 5-7 object category expansion
+
+Enterprise Integration (18+ months)
+
+ ERP system connectivity
+ Professional industrial packaging
+ API development for third-party integration
+ Predictive maintenance capabilities
+
+📚 Documentation
+
+📖 Complete Capstone Report - Comprehensive technical documentation
+🔧 Hardware Setup Guide - Component list and assembly instructions
+💻 Software Documentation - Code structure and algorithms
+📊 Test Results - Detailed performance analysis
+🎤 Final Presentation - Project overview slides
+
+🎓 Academic Context
+Institution: The British University in Dubai
+Department: Computer Science & Artificial Intelligence
+Course: AI Capstone Project (CSAI405)
+Supervisor: Prof. Piyush Maheshwari
+Academic Year: 2024-2025
+Submission Date: June 25, 2025
+🏆 Project Impact
+This project demonstrates that sophisticated warehouse automation can be achieved using accessible embedded systems, potentially democratizing automation technology for small-to-medium enterprises and educational institutions worldwide.
+Commercial Viability
+
+Target Market: Small warehouses, educational institutions, research facilities
+Cost Advantage: 25-100x cheaper than traditional commercial systems
+Scalability: Modular design supports incremental expansion
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+🤝 Contributing
+We welcome contributions from the community! Please read our Contributing Guidelines before submitting pull requests.
+📞 Contact & Support
+For questions, collaboration opportunities, or technical support:
+
+📧 Project Team: [Create team email or individual contacts]
+🎓 Institution: The British University in Dubai
+📋 Issues: Use GitHub Issues for bug reports and feature requests
+
+
+<p align="center">
+  <strong>⭐ Star this repository if you found it helpful! ⭐</strong>
+</p>
+<p align="center">
+  <em>Bridging the gap between educational projects and industrial automation</em>
+</p>
+```
